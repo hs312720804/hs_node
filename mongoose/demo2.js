@@ -35,3 +35,8 @@ var userSchema = new Schema({
         type: String,
     }
 })
+
+// 3、将文档结构发布为模型
+// mongoose.model 方法就是用来将一个架构发布为 model
+// 第一个参数：出入一个大写名词单数字符串用来标书你的数据库名词
+// mongoose会
