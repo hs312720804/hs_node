@@ -9,12 +9,12 @@ const student = require('./student')
 // })
 
 // 删除
-student.deleteById(1, (err)=>{
-    if (err) {
-        return console.log('sever error.')
-    }
-    console.log('删除成功！')
-})
+// student.deleteById(1, (err)=>{
+//     if (err) {
+//         return console.log('sever error.')
+//     }
+//     console.log('删除成功！')
+// })
 
 router.get('/404', (req, res) => {
     res.render('404.html', {

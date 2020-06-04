@@ -13,6 +13,7 @@ app.engine('html', require('express-art-template'))
 app.use(express.json()) // for parsing application/json
 app.use(express.urlencoded({ extended: true })) // for parsing application/x-www-form-urlencoded
 
+
 // 静态资源  资源
 // 没有第一个参数
 // app.use(express.static('public'))
