@@ -6,7 +6,7 @@ const router = require('./router')
 
 var app = express()
 
-// 配置使用art-template模板引擎
+// 配置使用art-template模板引擎111
 // 第一个参数，表示，当渲染以 .art 结尾的文件的时候，使用 art-template模板引擎
 app.engine('html', require('express-art-template'))
 
