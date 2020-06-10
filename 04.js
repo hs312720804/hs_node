@@ -41,14 +41,14 @@ function doIt() {
     const time1 = 300;
     step1(time1)
         .then(time2 => {
-            return step2(time1, time2)
+            return step2(time1, time2).then(time3 => [time1, time2, time3]);
             // 如果箭头函数只有一行语句，可以省略大括号，并且省略return关键字。
-            .then(time3 => [time1, time2, time3]);
+            
         })
         .then(times => {
-            console.log('times=' + times[0])
+            console.log('times=' + times)
             const [time1, time2, time3] = times;
-            return step3(time1, time2, times);
+            return step3(time1, time2, time3);
         })
         .then(result => {
             console.log(`result is ${result}`);
