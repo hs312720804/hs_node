@@ -11,6 +11,7 @@ mongoose.connect('mongodb://localhost/test');
 const Cat = mongoose.model('Cat', { name: String });
 
 for( var i = 0; i<10; i++){
+    console.log('讽德诵功水电费')
     // 实例化一个Cat
     const kitty = new Cat({ name: 'Zildjian' + i});
 
